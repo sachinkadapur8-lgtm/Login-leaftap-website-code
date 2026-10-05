@@ -4,8 +4,7 @@ import { test } from "@playwright/test";
 test("Learn Xpath",async ({page}) => {
     
     await page.goto("https://leaftaps.com/opentaps/control/main");
-
-await page.waitForEvent("domcontentloaded")
+    
     await page.locator('//input[@id="username"]').fill("democsr2");
 
 
